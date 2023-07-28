@@ -29,6 +29,9 @@ html {
 body {
     min-height: 100vh;
 }
+
+/* ------------------------------------------------------ */
+
 header {
     position: relative;
     display: flex;
@@ -88,6 +91,10 @@ header img {
     margin-left: 1rem;
     background-image: url(./assets/icons/down-arrow.svg);
 }
+
+/* ------------------------------------------------------ */
+
+
 main {
     width: 100%;
     height: auto;
@@ -122,10 +129,49 @@ main {
     line-height: 2.6rem;
     color: var(--black);
 }
-.main-exchange-container p {
+.main-exchange-container #description {
     margin-bottom: 3rem;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
+    color: #757575;
+}
+
+/* ------------------------------------------------------ */
+
+.main-currency-table {
+    min-width: 23.5rem;
+    max-width: 30rem;
+    width: 70%;
+    margin: 0 auto;
+
+    font-family: "Inter", sans-serif;
+}
+.main-currency-table #currency-table--title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+.currency-table--container {
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 15px;
+    background-color: var(--white);
+}
+.currency-table--container .table-field {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid rgb(186, 186, 186, 0.2);
+}
+.currency-table--container .coin {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    border-right: 1px solid rgb(186, 186, 186, 0.2);
+    color: var(--grey);
+}
+.currency-table--container .price {
+    font-size: 1.4rem;
+    font-weight: 300;
     color: #757575;
 }
