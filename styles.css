@@ -98,6 +98,7 @@ header img {
 main {
     width: 100%;
     height: auto;
+    min-width: 32rem;
     background-color: var(--off-white);
 }
 .main-exchange-container {
@@ -139,7 +140,8 @@ main {
 
 /* ------------------------------------------------------ */
 
-.main-currency-table {
+.main-currency-table,
+.main-commissions-table {
     min-width: 23.5rem;
     max-width: 30rem;
     width: 70%;
@@ -147,30 +149,60 @@ main {
 
     font-family: "Inter", sans-serif;
 }
-.main-currency-table #currency-table--title {
+.main-currency-table #currency-table--title,
+.main-commissions-table #commissions-table--title {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.3rem;
+    margin: 1.2rem 1.2rem;
+    text-align: left;
     color: var(--bitcoin-orange);
 }
-.currency-table--container {
+.main-commissions-table #commissions-table--title {
+    color: var(--secondary-blue);
+}
+.currency-table--container,
+.commissions-table--container {
     display: grid;
     grid-template-columns: auto auto;
     border-radius: 15px;
     background-color: var(--white);
 }
-.currency-table--container .table-field {
+.currency-table--container .up {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 1rem;
+    background-image: url(./assets/icons/trending-up.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currency-table--container .down {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 1rem;
+    background-image: url(./assets/icons/trending-down.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currency-table--container .table-field,
+.commissions-table--container .table-field {
     padding: 1rem 1.2rem;
     border-bottom: 1px solid rgb(186, 186, 186, 0.2);
 }
-.currency-table--container .coin {
+.currency-table--container .coin,
+.commissions-table--container .network {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.9rem;
     border-right: 1px solid rgb(186, 186, 186, 0.2);
     color: var(--grey);
 }
-.currency-table--container .price {
+.currency-table--container .price,
+.commissions-table--container .price {
     font-size: 1.4rem;
     font-weight: 300;
     color: #757575;
