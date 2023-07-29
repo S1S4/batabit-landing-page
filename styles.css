@@ -142,8 +142,18 @@ main {
     color: #757575;
 }
 
+.main-tables-container {
+  display: flex;
+  gap: 10px;
+  margin: 0 20px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
 .main-currency-table,
 .main-commissions-table {
+  scroll-snap-align: center;
   width: 70%;
   min-width: 235px;
   max-width: 500px;
@@ -387,8 +397,25 @@ main {
   color: #757575;
 }
 
+.plans-container--slider {
+  display: flex;
+  gap: 20px;
+  height: 316px;
+  overflow-x: scroll;
+  /* overscroll-behavior-x: contain; */
+  scroll-snap-type: x proximity;
+}
+.plans-container--slider::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3px;
+}
+.plans-container--slider::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
+
 .plans-container--card {
   position: relative;
+  scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
