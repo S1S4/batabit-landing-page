@@ -8,6 +8,8 @@
     "card-1 card-2 card-4"
     "card-1 card-3 card-4"
     ;
+    place-content: center;
+    justify-content: center;
 }
 .card-1 {
     grid-area: card-1;
