@@ -1,0 +1,28 @@
+.main-tables-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+.product-cards--container {
+    grid-template-areas: 
+    "card-1 card-2 card-4"
+    "card-1 card-3 card-4"
+    ;
+}
+.card-1 {
+    grid-area: card-1;
+    align-self: center;
+}
+.card-2 {
+    grid-area: card-2;
+}
+.card-3 {
+    grid-area: card-3;
+}
+.card-4 {
+    grid-area: card-4;
+    align-self: center;
+}
+.plans-container--slider {
+    justify-content: center;
+}
